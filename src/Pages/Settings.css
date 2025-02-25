@@ -1,0 +1,135 @@
+.settings-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 95vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.settings-panel {
+    background-color: var(--bg-light);
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    background-color: var(--button);
+    color: var(--text-dark);
+    font-size: 1.1em;
+    cursor: pointer;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.back-button:hover {
+    color: var(--accent-color);
+}
+
+.avatar-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.current-avatar {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-input-label {
+    background-color: var(--button);
+    color: var(--text-dark);
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.file-input-label:hover {
+    background-color: var(--button-hover);
+    }
+
+.upload-button {
+    background-color: var(--button);
+    color: var(--text-dark);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-button:hover {
+    background-color: var(--button-hover);
+}
+
+
+.settings-layout {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    height: 100%;
+}
+
+.settings-sidebar {
+    width: 200px;
+    border-right: 1px solid var(--border-color);
+    padding-right: 20px;
+}
+
+.sidebar-button {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    background: none;
+    border: none;
+    color: var(--text-dark);
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.sidebar-button:hover {
+    background-color: var(--button-hover);
+}
+
+.sidebar-button.active {
+    background-color: var(--button);
+    font-weight: bold;
+}
+
+.settings-content-wrapper {
+    flex: 1;
+}
+
+.settings-content {
+    width: 100%;
+}

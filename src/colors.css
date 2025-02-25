@@ -1,0 +1,33 @@
+:root {
+    /* Brand Colors */
+    --primary: #ff7417;
+    --primary-hover: #ab4215;
+    --secondary: #ffef44;
+
+    /* Background Colors */
+    --bg-dark: #895000;
+    --bg-light: #ffffff;
+    --bg-light-hover:#ffd4b7;
+    --bg-unique: #b71a90;
+    --bg-unique-hover: #8c0d5e;
+    --bg-button-light: #f9f9f9;
+    --bg-form: #ffffff;
+
+    --button:#ff7417;
+    --button-hover:#895000;
+    --button-unique: #b71a90;
+    --button-unique-hover: #8c0d5e;
+
+
+    /* Text Colors */
+    --text-dark: rgba(0, 0, 0, 0.87);
+    --text-dark-hover: rgba(255, 255, 255, 0.6);
+    --text-light: #ffffff;
+    --text-light-hover: #ff7417;
+
+    /* Border Colors */
+    --border-color: #ddd;
+
+    /* Shadow Colors */
+    --shadow-color: rgb(0, 0, 0);
+}
