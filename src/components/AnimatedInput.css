@@ -1,0 +1,85 @@
+
+.input-wrapper {
+    width: 100%;
+}
+
+.animated-input {
+    position: relative;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    background-color: var(--bg-light);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    color: var(--text-dark);
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.animated-input input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+    font-size: inherit;
+    border-radius: 5px;
+}
+
+.animated-input.valid {
+    border-color: #4CAF50;
+}
+
+.animated-input.invalid {
+    border-color: #f44336;
+}
+
+.indicator {
+    position: absolute;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.checkmark {
+    color: #4CAF50;
+}
+
+.cross {
+    color: #f44336;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.error-message {
+    color: #f44336;
+    font-size: 12px;
+    margin-top: 4px;
+    padding: 4px 8px;
+    background-color: rgba(244, 67, 54, 0.1);
+    border-radius: 4px;
+}
+
+.animated-input.invalid {
+    border-color: #f44336;
+    background-color: rgba(244, 67, 54, 0.05);
+}

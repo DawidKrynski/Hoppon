@@ -1,0 +1,89 @@
+.login-box{
+    width: 320px;
+    padding: 40px;
+    background-color: color-mix(in srgb, var(--bg-form) 80%, transparent);
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-box h1{
+    margin-bottom: 30px;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-field input:focus{
+    background: var(--bg-light-hover);
+}
+
+.divider {
+    text-align: center;
+    position: relative;
+    margin: 20px;
+}
+.divider::before,
+.divider::after {
+    content: "";
+    position:absolute;
+    height: 1px;
+    width: 40%;
+    font-size:18px;
+    top:50%;
+    background: var(--bg-light);
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    background-color: pink;
+    border-radius: 5px;
+    display:block;
+}
+
+.input-field input:invalid {
+    border: 1px solid red;
+    background-color: pink;
+}
+
+
+.spinner-small {
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+button:disabled  {
+    opacity: 0.7;
+    cursor: not-allowed;
+    background: #fff;
+    
+}
